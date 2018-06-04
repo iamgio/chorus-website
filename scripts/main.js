@@ -33,9 +33,9 @@ var jarLink, exeLink, version;
 var req = new Request('https://api.github.com/repos/iAmGio/chorus/releases/latest', init);
 fetch(req, init).then(function(response){ return response.json(); }).then(function(data){
     jarLink = data.assets[0].browser_download_url;
-    //exeLink = data.assets[1].browser_download_url;
+    exeLink = data.assets[1].browser_download_url;
     version = data.tag_name;
-    dateRaw = data.assets[0].updated_at.substring(0, data.assets[0].updated_at.length - 11);
+    dateRaw = data.assets[0].updated_at.substring(0, data.assets[0].updated_at.length - 10);
     date = dateRaw.split("-");
     year = date[0];
     month = date[1];

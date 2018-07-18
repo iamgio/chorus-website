@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link href="css/faq.css" rel="stylesheet">
+    <title>FAQ - Chorus</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Frequently Asked Questions</h1>
+    </div>
+    <div id="container">
+        
+    </div>
+    <script src="scripts/faq.js"></script>
+    <script>
+        addAnswer("What is Chorus?", "Chorus is an easy-to-use and lightweight YAML editor, created for owners of Minecraft servers based on Spigot. Thanks to its features, Chorus is perfect to edit your configurations quicker.");
+        addAnswer("How can I edit remote files?", "Chorus supports SFTP and FTP connections. To configure your remote server, go to Settings and, in either SFTP or FTP, insert in the editor <b>IP|Username</b> and, if the port isn't the default one (22 for SFTP, 21 for FTP), <b>|Port</b>. After this, you can you can access to the server using <i>File -> Open from SFTP/FTP</i>. You can configure how many servers you want.");
+        addAnswer("Can I create custom themes?", "Yes, Chorus does support custom themes. If you want to create your own, take a look at <a href='https://github.com/iAmGio/chorus#creating-your-own-theme' target='_blank'>this</a>.");
+        addAnswer("Why can't I open it on Linux?", "On Linux, you have to install the <i>openjfx</i> package.");
+        addAnswer("How do I open .YML files with Chorus by default on Windows?", "Right click on any .YML file, select Open with -> Choose another app. Mark 'Always use this app to open .yml files' and select Chorus. If it doesn't appear, click 'Other apps' and select Chorus' .exe file after clicking 'Search another app in this PC'");
+        addAnswer("How can I join the <i>Donators</i> list?", "You can be inserted in this list by donating how much you want to the developer through <a href='https://paypal.me/giogar' target='_blank'>PayPal</a>. The developer accepts donations since he has developed Chorus for months without getting paid, just for passion.");
+    </script>
+</body>
+</html>

@@ -234,7 +234,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 750px){
     .arrow-container > i {
         margin-left: 0 !important;
     }

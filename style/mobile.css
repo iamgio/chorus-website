@@ -1,0 +1,157 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    .col-9.my-auto.home-left {
+        width: 100%;
+        text-align: center;
+    }
+    .home-left .title {
+        font-size: 12vw;
+    }
+    .home-left .desc {
+        font-size: 5vw;
+    }
+    .home-left .button {
+        font-size: 4vw;
+        display: block;
+        margin: 15px 15px 15px 15px!important;
+    }
+    .home-right {
+        display: none;
+    }
+    .home-wave {
+        display: none;
+    }
+
+    .slide-2 .title {
+        font-size: 10vw;
+    }
+    .slide-2 .subtitle {
+        font-size: 5vw;
+        margin-bottom: 25px
+    }
+    .slide-2  .button {
+        font-size: 4vw;
+        display: block;
+        margin: 15px 15px 15px 15px!important;
+    }
+
+    .slide-feature .row {
+        display: table;
+        height: 60%!important;
+    }
+    .slide-feature .text {
+        display:table-footer-group;
+    }
+    .slide-feature .image {
+        display:table-header-group;
+    }
+    .slide-feature .title {
+        text-align: center;
+        font-size: 8vw;
+        font-weight: bold;
+    }
+    .slide-feature .desc {
+        text-align: center;
+        font-size: 3.5vw;
+    }
+    .slide-feature img {
+        text-align: center;
+        margin: 15px 0 15px 0;
+        width: 50%;
+
+    }
+    
+    .slide-feature {
+        height: 60%;
+    }
+
+    .image img {
+      border-radius: 0;
+      width: 80%;
+      padding: 20px 0 20px 0
+    }
+    .image {
+      background-size: 50%;
+    }
+    /* FAQ */
+
+    .faqs .title {
+      font-size: 8vw;
+      margin-bottom: 15px;
+    }
+
+    .faq .question {
+      font-size: 5vw;
+    }
+    .faq .answer {
+      font-size: 3.5vw;
+    }
+
+    .footer .content {
+      grid-template-columns: auto;
+  }
+  .arrow a {
+    font-size: 5vw;
+  }
+  }

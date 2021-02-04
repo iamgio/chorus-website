@@ -3,25 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="img/favicon.png" type="image/png" />
-    <link href="css/faq.css" rel="stylesheet">
-    <title>FAQ - Chorus</title>
+    <title>Chorus</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mobile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
-<body>
-    <div id="header">
-        <h1>Frequently Asked Questions</h1>
+<body class="faqs">
+    <div class="title">Frequently Asked Questions</div>
+
+    <div class="faq">
+        <div class="question">What is Chorus?</div>
+        <div class="answer">Chorus is the first YAML editor that aims at providing a pleasant experience while quickly and easily configuring the plugins your Minecraft server needs, thanks to an endless amount of features.</div>
     </div>
-    <div id="container"></div>
-    <script src="scripts/faq.js"></script>
-    <script>
-        addAnswer("What is Chorus?", "Chorus is an easy-to-use and lightweight YAML editor, created for everybody who works on Spigot-based Minecraft servers. Thanks to its features, Chorus is perfect to edit your configurations quicker.");
-        addAnswer("How can I edit remote files?", "Chorus supports SFTP and FTP connections. In order to configure your remote server, head to Settings and, in either SFTP or FTP, insert in the editor <b>IP|Username</b> and, if the port isn't the default one (22 for SFTP, 21 for FTP), <b>|Port</b>. After doing this, you can you can access to the server using <i>File -> Open from SFTP/FTP</i>. You can configure how many servers you want.");
-        addAnswer("Can I create custom add-ons?", "Yes, since version 1.3 Chorus supports custom JavaScript add-ons via a very simple API. If you are interested, see <a href='https://github.com/iAmGio/chorus#writing-your-own-add-on' target='_blank'>here</a>.")
-        addAnswer("Can I create custom themes?", "Yes, Chorus does support custom themes. If you want to create your own, take a look at <a href='https://github.com/iAmGio/chorus#creating-your-own-theme' target='_blank'>this</a>.");
-        addAnswer("How do I open .YML files with Chorus by default on Windows?", "Right click on any .YML file, select Open with -> Choose another app. Mark 'Always use this app to open .yml files' and select Chorus. If it doesn't appear, click 'Other apps' and select Chorus' .exe file after clicking 'Search another app in this PC'");
-        addAnswer("Why does my antivirus mark Chorus as a virus?", "Some antiviruses may mark Chorus' executable as a virus because it has an unverified certificate. Part of funds earned by donations will be used to buy a verified certificate. But don't worry: Chorus is 100% safe.")
-        addAnswer("How can I join the <i>Donators</i> list?", "By donating any amount to the developer through <a href='https://paypal.me/giogar' target='_blank'>PayPal</a> your name or nickname will be added to this list that everyone can see.");
-    </script>
+
+    <div class="faq">
+        <div class="question">How can I connect to my remote host?</div>
+        <div class="answer">In order to configure your remote server, head to settings and, in either SFTP or FTP, follow the instructions given. After you have configured your server, access to the server from <i>File > Open from SFTP/FTP</i>. You can configure how many servers you want.</div>
+    </div>
+
+    <div class="faq">
+        <div class="question">Can I create custom add-ons?</div>
+        <div class="answer">Yes, since version 1.3 Chorus supports custom JavaScript add-ons via a very simple API. If you are interested, see <a href='https://github.com/iAmGio/chorus#writing-your-own-add-on' target='_blank'>here</a>.</div>
+    </div>
+
+    <div class="faq">
+        <div class="question">Can I create custom themes?</div>
+        <div class="answer">Yes, Chorus does support custom themes. If you want to create your own, see <a href='https://github.com/iAmGio/chorus#creating-your-own-theme' target='_blank'>this</a>.</div>
+    </div>
+
+    <div class="faq">
+        <div class="question">How can I open .YML files with Chorus by default on Windows?</div>
+        <div class="answer">Right click on any .YML file, select Open with > Choose another app. Mark 'Always use this app to open .yml files' and select Chorus. If it doesn't appear, click 'More apps' and select Chorus' .exe file after clicking 'Look for another app on this PC'</div>
+    </div>
+
+    <div class="faq">
+        <div class="question">Why does my antivirus mark Chorus as a threat?</div>
+        <div class="answer"><b>Chorus will not harm your PC in any way.</b> The whole source code is online and you can check it yourself.<br>This alert is a thing since I can't currently afford a digital signature, so antiviruses will tell you the program you are about to use comes from an unverified source.</div>
+    </div>
+
+    <div class="faq">
+        <div class="question">How can I join the Donators list?</div>
+        <div class="answer">By donating any amount to the developer through <a href='http://donate.chorusmc.org' target='_blank'>PayPal</a> your name or nickname will be added to a list that everyone can see.</div>
+    </div>
 </body>
 </html>

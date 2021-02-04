@@ -1,130 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-	<meta name="description" content="The first editor for Spigot configurations. Lightweight and easy to use.">
-	<meta name="author" content="MegaWorks">
-	<meta name="keywords" content="editor, chorus, minecraft, spigot, spigot editor, yaml, yml editor, yml, plugin, plugins, minecraft plugin">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="icon" href="img/favicon.png" type="image/png" />
-	<script defer="" src="scripts/jquery.scrollify.js"></script>
-	<script defer="" src="scripts/main.js"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-		
-	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<title>Chorus</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The first editor for Spigot configurations. Lightweight and ergonomic.">
+    <meta name="keywords" content="editor, chorus, minecraft, spigot, spigot editor, yaml, yml editor, yml, plugin, plugins, minecraft plugin">
+    <title>Chorus</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mobile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-	<section class="fullwidth home" style="height: 668.95px; " data-section-name="home">
-		<div class="container row">
-			<div class="col-md-8">
-				<h1 class="title">Chorus</h1>
-				<p class="subtitle">The first editor for Spigot configurations.<br>
-					Lightweight and easy to use.</p>
-				<div class="dl-btns">
-					<a href="" id="exe" class="download-btn-filled"><i class="fas fa-download"></i>Windows</a><a href="" class="download-btn-filled jar"><i class="fas fa-download"></i>MacOS</a><a href="" id="jar" class="download-btn-filled jar"><i class="fas fa-download"></i>Linux</a><br>
-					<p id="version"></p><p id="date"></p>
-					<a style="display: block; margin-top: 60px;" href="faq.html" target="_blank" class="download-btn-filled"><i class="fas fa-question-circle"></i>FAQ</a>
-				</div>
-			</div>
-			<div class="col-md-4 img-container">
-				<img src="img/logo.png" alt="Logo">
-			</div>
-		</div>
-		<div class="arrow-container">
-			<i class="fas fa-angle-down scroll" href="#features"></i>
-		</div>
-	</section>
-	<section class="fullwidth features row" style="padding-top: 100px; height: 393px;" data-section-name="features">
-		<div class="imgbox col-md-6">
-			<img class="features-img" src="img/SFTP.png" alt="SFTP">
-		</div>
-		<div class="textbox col-md-6">
-			<h1 class="features-title">Edit remote files</h1>
-			<p class="features-desc">Chorus provides internal SFTP and FTP clients to connect to your server and edit the files you need, in only one application.</p>
-		</div>
-	</section>
-    <section class="fullwidth features row" style="padding-top: 100px; height: 393px;" data-section-name="features">
-	<div class="textbox col-md-6">
-		<h1 class="features-title">Intelligent autocompletion</h1>
-		<p class="features-desc">Don't lose focus! Chorus will offer you the words you need while you're typing.</p>			
-	</div>
-	<div class="imgbox col-md-6">
-		<img class="features-img" src="img/autocompletion.png" alt="Autocompletion">
-	</div>
-	</section>
-	<section class="fullwidth features" style="padding-top: 100px; height: 393px;" data-section-name="features">
-		<div class="imgbox col-md-6">
-			<img class="features-img" src="img/guipreview.png" alt="GUI preview">
-		</div>
-		<div class="textbox col-md-6">
-			<h1 class="features-title">Realistic previews</h1>
-			<p class="features-desc">Chorus is made to save your time. Thanks to realistic previews, you can see how your plugin will look like in game.</p>			
-		</div>
-	</section>
-	<section class="fullwidth features" style="padding-top: 100px; height: 393px;" data-section-name="features">
-		<div class="textbox col-md-6">
-			<h1 class="features-title">Easy inserter</h1>
-			<p class="features-desc">Insert items, effects, entities, particles, sounds, enchantments and much more using a user-friendly menu.</p>
-		</div>
-		<div class="imgbox col-md-6">
-			<img class="features-img" src="img/items.png">
-		</div>
-	</section>
-	<section class="fullwidth features" style="padding-top: 100px; height: 393px;" data-section-name="features">
-		<div class="imgbox col-md-6">
-			<img class="features-img" src="img/inlineeditor.png" alt="Editor">
-		</div>
-		<div class="textbox col-md-6">
-			<h1 class="features-title">Colored-text editor</h1>
-			<p class="features-desc">Chorus contains an awesome rich-text editor to easily create colored and formatted strings.</p>			
-		</div>
-	</section>
-	<section class="fullwidth features" style="padding-top: 100px; height: 393px;" data-section-name="features">
-		<div class="textbox col-md-6">
-			<h1 class="features-title">Wiki connection</h1>
-			<p class="features-desc">Chorus can connect to the official Minecraft Wiki to display information about game components.</p>
-		</div>
-		<div class="imgbox col-md-6">
-			<img class="features-img" src="img/infoblocks.png" alt="Blocks info">
-		</div>
-	</section>
-	<section class="fullwidth features" style="padding-top: 100px; height: 393px;" data-section-name="features">
-		<div class="imgbox col-md-6">
-			<img class="features-img" src="img/timeconverter.png">
-		</div>
-		<div class="textbox col-md-6">
-			<h1 class="features-title">Time converter</h1>
-			<p class="features-desc">Chorus is able to convert seconds and other time units to ticks, and vice-versa.</p>
-		</div>
-	</section>
-	<section class="fullwidth features" style="padding-top: 100px; height: 393px;" data-section-name="features">
-		<div class="textbox col-md-6">
-			<h1 class="features-title">Variables</h1>
-			<p class="features-desc">Insert variables into Chorus to replace them when showing previews.</p>
-		</div>
-		<div class="imgbox col-md-6">
-			<img class="features-img" src="img/variables.png" alt="Variables">
-		</div>
-	</section>
-	<div class="scrollTop-wrapper" style="display: none;">
-		<a class="scroll" href="#home"><i class="fas fa-angle-up"></i></a>
-	</div>
-	<footer class="foot" data-section-name="footer">
-		<div class="links">
-			<a href="https://github.com/iAmGio/chorus/blob/master/LICENSE">License</a>
-			<a href="https://paypal.me/giogar">Donate</a>
-			<a href="https://t.me/chorusmc">Telegram Channel</a>
-			<a href="https://t.me/iAmGio">Developer</a>
-			<a href="https://t.me/Mega_01" style="padding-left: 30px">Website by MegaWorks</a>
-		</div>
-		<a href="https://github.com/iAmGio/chorus"><i class="fab fa-github"></i></a>
-	</footer>
+    <img src="img/wave3.svg" draggable="false" class="home-wave">
+    <div class="slide-home">
+        <div class="container-1 h-100" style="z-index: 99;">
+            <div class="row h-100">
+                <div class="col-9 my-auto home-left">
+                    <div class="title">Chorus</div>
+                    <div class="desc">The first editor for Spigot configurations. <br> Lightweight and ergonomic.</div>
+                    <a href="#download"><div class="button" style="margin-right: 20px"><i class="fas fa-download"></i> Download</div></a>
+                    <a href="faq.html" target="_blank"><div class="button" style="margin-right: 20px"><i class="fas fa-question"></i> FAQ</div></a>
+                    <a href="https://github.com/iAmGio/chorus" target=”_blank”><div class="button" ><i class="fab fa-github"></i> GitHub</div></a>
+                </div>
+                <div class="col-3 my-auto home-right">
+                    <img src="img/logo.png" alt="Logo" style="width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+            <div class="arrow">
+                <a href="#feature"><i class="fas fa-angle-down"></i></a>
+            </div>
+    </div>
+
+    <div class="slide-feature" id='feature'>
+        <div class="container-1 h-100" style="z-index: 99;">
+            <div class="row h-100">
+                <div class="col my-auto mr-2 image">
+                    <img src="img/slide1.png" alt="Feature">
+                </div>
+                <div class="col-1"></div>
+                <div class="col my-auto text">
+                    <div class="title">Edit remote files</div>
+                    <div class="desc mt-1">Chorus provides internal SFTP and FTP clients that let you can connect to your server and remotely edit the files you need, all in one place.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-feature">
+        <div class="container-1 h-100" style="z-index: 99;">
+            <div class="row h-100">
+                <div class="col my-auto text">
+                    <div class="title">Realistic previews</div>
+                    <div class="desc mt-1">Chorus is made to save your time.
+                        Interactive and high fidelity previews let you see how your plugins will look like in game.
+                        <br> No more jumping back and forth!
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col my-auto mr-2 image">
+                    <img src="img/slide3.png" alt="Feature">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-feature">
+        <div class="container-1 h-100" style="z-index: 99;">
+            <div class="row h-100">
+                <div class="col my-auto mr-2 image">
+                    <img src="img/slide5.png" alt="Feature">
+                </div>
+                <div class="col-1"></div>
+                <div class="col my-auto text">
+                    <div class="title">Colored-text editor</div>
+                    <div class="desc mt-1">Chorus comes with an awesome rich-text editor to easily create colored and formatted strings.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-feature">
+        <div class="container-1 h-100" style="z-index: 99;">
+            <div class="row h-100">
+                <div class="col my-auto text">
+                    <div class="title">Simple inserter</div>
+                    <div class="desc mt-1">Insert items, effects, entities, particles, enchantments, sounds and much more via a user-friendly menu.</div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col my-auto mr-2 image">
+                    <img src="img/slide4.png" alt="Feature">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-feature">
+        <div class="container-1 h-100" style="z-index: 99;">
+            <div class="row h-100">
+                <div class="col my-auto mr-2 image">
+                    <img src="img/slide2.png" alt="Feature">
+                </div>
+                <div class="col-1"></div>
+                <div class="col my-auto text">
+                    <div class="title">Intelligent autocompletion</div>
+                    <div class="desc mt-1">Working on a successful server requires focus. Don't lose it!
+                        <br>Chorus will offer you the words you need while you are typing.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-feature">
+        <div class="container-1 h-100" style="z-index: 99;">
+            <div class="row h-100">
+                <div class="col my-auto text">
+                    <div class="title">Wiki connection</div>
+                    <div class="desc mt-1">
+                        Chorus is able to connect to the official Minecraft Wiki in order to display information about game elements.
+                        <br><br><i style="mix-blend-mode: soft-light">Tip: CTRL + click</i>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col my-auto mr-2 image">
+                    <img src="img/slide6.png" alt="Feature">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-feature">
+        <div class="container-1 h-100" style="z-index: 99;">
+            <div class="row h-100">
+                <div class="col my-auto mr-2 image">
+                    <img src="img/slide7.png" alt="Feature">
+                </div>
+                <div class="col-1"></div>
+                <div class="col my-auto text">
+                    <div class="title">Ticks converter</div>
+                    <div class="desc mt-1">Easily convert seconds and other time units to ticks, and vice-versa.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-feature">
+        <div class="container-1 h-100" style="z-index: 99;">
+            <div class="row h-100">
+                <div class="col my-auto text">
+                    <div class="title">Variables</div>
+                    <div class="desc mt-1">Emulate placeholders by creating variables that will be displayed in previews.</div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col my-auto mr-2 image">
+                    <img src="img/slide8.png" alt="Feature">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-2">
+        <div class="container-1 h-100" style="z-index: 99;">
+            <div class="row h-100" id="download">
+                <div class="col my-auto">
+                    <div class="title">Download</div>
+                    <div class="subtitle"><b id="version"></b> <span id="date"></span></div>
+                    <div style="text-align: center;">
+                        <a id="exec_exe" href=""><div class="button" style="margin-right: 20px"><i class="fab fa-windows"></i> Windows</div></a>
+                        <a class="exec_jar" href=""><div class="button" style="margin-right: 20px"><i class="fab fa-apple"></i> MacOS</div></a>
+                        <a class="exec_jar" href=""><div class="button"><i class="fab fa-linux"></i> Linux</div></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="footer clearfix">
+    <div class="content ">
+        <a href="https://github.com/iAmGio/chorus/blob/master/LICENSE">License</a>
+        <a href="http://donate.chorusmc.org">Donate</a>
+        <a href="https://t.me/chorusmc">Telegram Channel</a>
+        <a href="https://t.me/iAmGio">Developer</a>
+        <a href="https://t.me/moonmatt">Website by Matteo Galavotti</a>
+    </div>
+</div>
+
+    <script src="script.js"></script>
 </body>
 </html>

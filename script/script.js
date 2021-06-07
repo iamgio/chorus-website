@@ -10,13 +10,13 @@ function updateDownloadUrls() {
         document.getElementById('version').innerHTML = data.tag_name;
         document.getElementById('date').innerHTML = date[0] + "/" + date[1] + "/" + date[2];
 
-        const exe = data.assets[0].browser_download_url;
-        const jar = data.assets[1].browser_download_url;
+        const app = data.assets[0].browser_download_url;
+        const exe = data.assets[1].browser_download_url;
+        const jar = data.assets[2].browser_download_url;
 
+        document.getElementById("exec_app").setAttribute("href", app);
         document.getElementById("exec_exe").setAttribute("href", exe);
-        for (let jarElement of document.getElementsByClassName("exec_jar")) {
-            jarElement.setAttribute("href", jar);
-        }
+        document.getElementById("exec_jar").setAttribute("href", jar);
     })
 }
 

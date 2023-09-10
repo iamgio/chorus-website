@@ -10,14 +10,23 @@ function updateDownloadUrls() {
         document.getElementById('version').innerHTML = data.tag_name;
         document.getElementById('date').innerHTML = date[0] + "/" + date[1] + "/" + date[2];
 
-        const app = data.assets[0].browser_download_url;
-        const exe = data.assets[1].browser_download_url;
-        const jar = data.assets[2].browser_download_url;
+        const app = getAssetUrlBySuffix(data.assets, '.app.zip');
+        const exe = getAssetUrlBySuffix(data.assets, '.exe');
+        const jar = getAssetUrlBySuffix(data.assets, '.jar');
 
         document.getElementById("exec_app").setAttribute("href", app);
         document.getElementById("exec_exe").setAttribute("href", exe);
         document.getElementById("exec_jar").setAttribute("href", jar);
     })
+}
+
+function getAssetUrlBySuffix(assets, suffix) {
+    const filtered = assets.filter(asset => asset.name.endsWith(suffix))
+    if (Array.isArray(filtered) && !filtered.length) {
+        console.error("Could not find asset with suffix " + suffix);
+        return undefined;
+    }
+    return filtered[0].browser_download_url;
 }
 
 function initAddonFieldListener() {

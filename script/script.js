@@ -10,12 +10,14 @@ function updateDownloadUrls() {
         document.getElementById('version').innerHTML = data.tag_name;
         document.getElementById('date').innerHTML = date[0] + "/" + date[1] + "/" + date[2];
 
-        const app = getAssetUrlBySuffix(data.assets, '.app.zip');
         const exe = getAssetUrlBySuffix(data.assets, '.exe');
+        const armApp = getAssetUrlBySuffix(data.assets, 'arm.app.zip');
+        const x86App = getAssetUrlBySuffix(data.assets, 'x86.app.zip');
         const jar = getAssetUrlBySuffix(data.assets, '.jar');
 
-        document.getElementById("exec_app").setAttribute("href", app);
         document.getElementById("exec_exe").setAttribute("href", exe);
+        document.getElementById("exec_arm_app").setAttribute("href", armApp);
+        document.getElementById("exec_x86_app").setAttribute("href", x86App);
         document.getElementById("exec_jar").setAttribute("href", jar);
     })
 }
